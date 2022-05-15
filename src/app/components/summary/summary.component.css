@@ -1,0 +1,16 @@
+/* Uses the :host CSS selector to narrow the specificity of the selector and set default background */
+:host .stock-card{
+  background: #333;
+}
+
+/* increase class defines the background as green */
+:host .stock-card.increase{
+  background: #558B2F;
+  color: #fff;
+}
+
+/* decrease class defines the background as red */
+:host .stock-card.decrease{
+  background: #C62828;
+  color: #ffff;
+}
