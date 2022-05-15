@@ -3,14 +3,13 @@
      style="width: 100%;">
   <span>
     <div class="mdl-card__title">
-      <h4 style="color: #fff;margin:0" Ronima:2016
-      >
+      <h4 style="color: #fff;margin:0">
         <!-- Displays the symbol value and converts to uppercase -->
         {{stock?.symbol?.toUpperCase()}}<br/>
         <!-- Displays last price and formats it as currency -->
         {{stock?.lastTradePriceOnly | currency: 'USD':'symbol':'.2'}}<br/>
         <!-- Displays the day's change as currency and as percent -->
-        {{sotck?.change | currency:'USD':'symbol':'.2'}}({{stock?.changeInPercent | precent : '.2'}}
+        {{stock?.change | currency:'USD':'symbol':'.2'}}({{stock?.changeInPercent | percent : '.2'}}
       </h4>
     </div>
   </span>
