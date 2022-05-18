@@ -1,7 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-summary',
+  selector: 'summary',
   templateUrl: './summary.component.html',
   styleUrls: ['./summary.component.css']
 })
