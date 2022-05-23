@@ -1,11 +1,11 @@
-<div class="mdl-grid">
+<div class="d-flex flex-column align-items-center flex-lg-row justify-content-lg-center align-items-lg-center">
   <!-- Use NgIf to show a loading message until stocks have loaded -->
   <div class="mdl-cell mdl-cell--12-col" *ngIf="!stocks" style="text-align: center">
     Loading
   </div>
   <!-- Use NgFor to loop over each stock -->
-  <div class="mdl-cell mdl-cell--3-col" *ngFor="let stock of stocks">
+  <div class="mb-3 mt-3" *ngFor="let stock of stocks">
     <!-- Instantiate a Summary component for each stock and pass that stock data -->
-    <summary [stock]="stock"></summary>
+    <summary class="me-3 list-unstyled" [stock]="stock"></summary>
   </div>
 </div>
